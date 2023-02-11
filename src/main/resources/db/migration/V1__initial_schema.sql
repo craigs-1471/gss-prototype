@@ -19,3 +19,36 @@ CREATE TABLE if not exists employee_department (
    FOREIGN KEY (department_id)
        REFERENCES departments (department_id)
 );
+
+-- INSERT INTO employees(first_name, last_name, email)
+-- VALUES ('Spencer', 'Craig', 'email');
+
+-- INSERT INTO departments(department_name, department_description)
+-- VALUES ('HR', 'Dealing with people');
+
+-- INSERT INTO employee_department(employee_id, department_id)
+-- VALUES (1, 1);
+
+INSERT INTO
+    employees (first_name, last_name, email)
+VALUES
+    ('Spencer', 'Craig', 'spenny@gmail.com'),
+    ('Jodie', 'Craig', 'jodie@gmail.com'),
+    ('Nancy', 'Craig', 'nancy@gmail.com'),
+    ('Charlie', 'Craig', 'charles@gmail.com');
+
+INSERT INTO
+    departments (department_name, department_description)
+VALUES
+    ('Human Resources', 'Dealing with people'),
+    ('Systems Maintenance', 'Maintaining systems');
+
+INSERT INTO
+    employee_department (employee_id, department_id)
+VALUES
+    (1,2),
+    (2,2),
+    (3,2),
+    (4,1);
+
+
